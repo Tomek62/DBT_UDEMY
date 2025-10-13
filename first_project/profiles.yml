@@ -1,9 +1,9 @@
 first_project:
   outputs:
     dev:
-      account: {{ env_var('SNOWFLAKE_ACCOUNT') }}
+      account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
       database: AIRBNB
-      password: {{ env_var('SNOWFLAKE_PASSWORD') }}
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
       role: transform
       schema: DEV
       threads: 1
