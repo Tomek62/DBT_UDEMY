@@ -23,6 +23,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install dbt-core
 
+      - name: Change to project directory
+        run: cd first_project
+        
       - name: Run dbt debug
         run: dbt debug
 
