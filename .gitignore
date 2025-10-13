@@ -1,2 +1,3 @@
 venv/
 tlf_dbt_dagster_project/__pycache__/
+.env
