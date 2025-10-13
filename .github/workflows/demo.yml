@@ -2,7 +2,7 @@ name: dbt Demo Workflow
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   dbt-run:
