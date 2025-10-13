@@ -3,7 +3,6 @@ name: dbt Demo Workflow
 on:
   push:
     branches: [main]
-  pull_request:
 
 jobs:
   dbt-run:
@@ -25,7 +24,7 @@ jobs:
 
       - name: Change to project directory
         run: cd first_project
-        
+
       - name: Run dbt debug
         run: dbt debug
 
