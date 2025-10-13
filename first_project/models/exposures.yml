@@ -1,0 +1,13 @@
+version: 2
+
+exposures:
+  - name: airbnb_reporting
+    type: dashboard
+    description: "A dashboard for Airbnb data analysis."
+    url: "https://e78e7740.us1a.app.preset.io/superset/dashboard/8/"
+    depends_on:
+      - ref('mart_full_moon_reviews')
+      - ref('dim_listings_with_hosts')
+    owner:
+      name: "Data Team"
+      email: "data_team@example.com"
