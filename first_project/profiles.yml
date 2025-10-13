@@ -5,7 +5,7 @@ first_project:
       database: AIRBNB
       password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
       role: transform
-      schema: DEV
+      schema: PROD
       threads: 1
       type: snowflake
       user: dbt
